@@ -1,19 +1,7 @@
 **Tasks 0. Hello, print mandatory**
 
 Write a Python script that prints exactly "Programming is like building a multilingual puzzle, followed by a new line.
-
-    Use the function print
-
-guillaume@ubuntu:~/py/$ python3 0-print.py 
-"Programming is like building a multilingual puzzle
-guillaume@ubuntu:~/py/$
-
-Repo:
-
-    GitHub repository: alx_python
-    Directory: python-hello_world
-    File: 0-print.py
-
+Use the function print
 
 **1. Copy - Cut - Paste mandatory Complete this 1-edges.py**
 
@@ -23,21 +11,6 @@ Repo:
     word_first_3 should contain the first 3 letters of the variable word
     word_last_2 should contain the last 2 letters of the variable word
     middle_word should contain the value of the variable word without the first and last letters
-
-guillaume@ubuntu:~/py/$ python3 1-edges.py
-First 3 letters: Hol
-Last 2 letters: on
-Middle word: olberto
-guillaume@ubuntu:~/py/$ wc -l 1-edges.py
-8 1-edges.py
-guillaume@ubuntu:~/py/$ 
-
-Repo:
-
-    GitHub repository: alx_python
-    Directory: python-hello_world
-    File: 1-edges.py
-
 
 **2. Positive anything is better than negative nothing mandatory**
 
@@ -52,7 +25,6 @@ This program will assign a random signed number to the variable number each time
             if the number is 0: is zero
             if the number is less than 0: is negative
         followed by a new line
-
 
 **3. The last digit mandatory**
 
@@ -70,21 +42,16 @@ This program will assign a random signed number to the variable number each time
             if the last digit is less than 6 and not 0: the string and is less than 6 and not 0
         followed by a new line
 
-
 **4. Hexadecimal printing mandatory**
-
 Write a program that prints all numbers from 0 to 98 in decimal and in hexadecimal (as in the following example)
-
     You can only use one print function with string format
     You can only use one loop in your code
     You are not allowed to store numbers or strings in a variable
     You are not allowed to import any module
 
-
 **5. 00...99 mandatory**
 
 Write a program that prints numbers from 0 to 99.
-
     Numbers must be separated by ,, followed by a space
     Numbers should be printed in ascending order, with two digits
     The last number should be followed by a new line
@@ -95,8 +62,8 @@ Write a program that prints numbers from 0 to 99.
 
 
 **6. Inventing is a combination of brains and materials. The more brains you use, the less material you need mandatory**
-Write a program that prints all possible different combinations of two digits.
 
+Write a program that prints all possible different combinations of two digits.
     Numbers must be separated by ,, followed by a space
     The two digits must be different
     01 and 10 are considered the same combination of the two digits 0 and 1
