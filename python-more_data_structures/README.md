@@ -1,4 +1,4 @@
-# More Python Data Structures
+**More Python Data Structures**
 # Using more data structure in Python
 |  TASK                   |                                                 DESCRIPTION                                        |
 |-------------------------|----------------------------------------------------------------------------------------------------|
