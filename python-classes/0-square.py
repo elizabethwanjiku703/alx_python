@@ -1,19 +1,12 @@
 #!/usr/bin/python3
+#!/usr/bin/python3
+
+"""The code defines a class called Square using the class keyword."""
+
 class Square:
-    """
-    A class that defines a square.
-
-    Attributes:
-        __size (int): The size of the square.
-
+    """The __init__ method is the constructor of the class.
+    Inside the __init__ method, the private instance attribute __size is assigned the value of the size parameter.
     """
 
     def __init__(self, size):
-        """
-        Initialize the Square object.
-
-        Args:
-            size (int): The size of the square.
-
-        """
         self.__size = size
