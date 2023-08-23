@@ -1,4 +1,4 @@
-**Learning python**
+**Learning Python**
 1. Python Hello world.
 2. Functions.
 3. Import and Modules.
