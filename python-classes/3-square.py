@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-"""This line defines a class named "Square"."""
 class Square:
+    """
+    This line defines a class named "Square".
+    """
     def __init__(self, size=0):
         self.__size = size
         """This line checks if the "size" parameter is an instance of the "int" class. 
@@ -13,9 +15,12 @@ class Square:
             using the dot notation (square.size).
             """
             return self.__size
+    """
+    The @size.setter decorator is used to define a setter method for the size attribute.
+    """
     @size.setter
     def size (self, value):
-        """The @size.setter decorator is used to define a setter method for the size attribute. 
+        """ 
         This allows to update the size attribute using the assignment operator 
         (square.size = new_size).
         """
@@ -33,3 +38,4 @@ class Square:
              The area method calculates and returns the area of the square.
              """
              return self.__size **2
+
