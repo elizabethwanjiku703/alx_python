@@ -1,31 +1,30 @@
 #!/usr/bin/python3
-"""
-A class represinting a square.
-"""
+"""This line defines a class named "Square". """
 class Square:
     """
-    Attribes:
-    __size (int): The size of the square 
+    This is the constructor method for the Square class. 
+    It is called when a new object of the class is created.
     """
-    def __init__(self,size=0):
+    def __init__(self, size=0):
         """
-        Initializes a Square object.
-        Args:
-            size (int): The size of the square. 
-            Defaults to 0.
-        Raises:
-            TypeError: If size is not an integer.
-            ValueError: If size is less than 0.
+        This line checks if the "size" parameter is an instance of the "int" class. 
+        If it is not, a TypeError is raised with the message 
+        'size must be an integer'.
         """
         if not isinstance(size, int):
-        """Raises:
-            TypeError: If size is not an integer.
+            raise TypeError('size must be an integer')
         """
-            raise TypeError("size must be interger")
+        This line checks if the "size" parameter is less than 0. 
+        If it is, a ValueError is raised with the message 
+        'size must be >= 0'.
+        """
         if size < 0:
-        """ Raises:
-            ValueError: If size is less than 0.
+            raise ValueError('size must be >= 0')
         """
-            raise ValueError("size must be >= 0")
-        self.size = size
-
+        This line assigns the value of the "size" parameter to the instance variable "__size".
+        The double underscore before the variable name indicates 
+        that it is intended to be a private variable, 
+        meaning it should not be accessed directly from outside 
+        the class.
+        """
+        self.__size = size
