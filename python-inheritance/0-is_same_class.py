@@ -1,9 +1,9 @@
 #!/usr/bin/python3
+    """This code defines a function is_same_class that can be used to check if an 
+    object obj belongs to a specific class a_class. 
+    """
 def is_same_class(obj, a_class):
     """
-    Check if an object belongs to a specific class.
-
-    Parameters:
     - obj: The object to check.
     - a_class: The class to compare against.
 
