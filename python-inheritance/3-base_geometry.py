@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 """
-Empty class for the base geometry.
+Module for the BaseGeometry class.
 """
 
 class BaseGeometry:
     """
-    This is an empty class that serves as the base for geometry-related classes.
-    It does not have any attributes or methods defined.
+    This is the BaseGeometry class.
+    
+    It serves as the base for geometry-related classes.
     """
     pass
