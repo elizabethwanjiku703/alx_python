@@ -1,15 +1,12 @@
 #!/usr/bin/python3
+"""A class representing a base geometry."""
 class BaseGeometry:
     """
-    A class representing a base geometry.
-
     Methods:
     - area(): Public instance method that raises an Exception with the message area() is not implemented.
     - integer_validator(name, value): Public instance method that validates an integer value.
-
     Attributes: None
     """
-
     def area(self):
         """
         Public instance method that raises an Exception with the message area() is not implemented.
