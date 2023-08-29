@@ -4,8 +4,9 @@ class BaseGeometry:
     def integer_validator(self, name, value):
         if not isinstance(value, int) or value <= 0:
             raise ValueError(f"{name} must be a positive integer")
-"""Rectangle class that inherits from BaseGeometry. """
+
 class Rectangle(BaseGeometry):
+    """Rectangle class that inherits from BaseGeometry. """
     def __init__(self, width, height):
         self.__width = width
         self.__height = height
@@ -19,5 +20,8 @@ class Rectangle(BaseGeometry):
     def __str__(self):
         return f"[Rectangle] {self.__width}/{self.__height}"
 
+r = Rectangle(3, 5)
 
+print(r)
+print(r.area())
 
