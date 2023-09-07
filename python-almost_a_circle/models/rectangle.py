@@ -6,7 +6,6 @@ from models.base import Base
 
 class Rectangle(Base):
     """Rectangle class"""
-
     def __init__(self, width, height, x=0, y=0, id=None):
         """init the rectangle object with given width and height"""
         super().__init__(id)
@@ -38,7 +37,7 @@ class Rectangle(Base):
     def height(self, value):
         """Setter for the rectangle height"""
         if type(value) != int:
-            raise TypeError("height must be integer")
+            raise TypeError ("height must be integer")
         if value <= 0:
             raise ValueError("height must be > 0")
         self.__height = value
@@ -67,7 +66,6 @@ class Rectangle(Base):
         """Setter for the rectangle y"""
         if type(value) !=int:
             raise TypeError("y must be an integer")
-	if value < 0:
-	    raise ValueError("y must be > 0")
+        if value < 0:
+            raise ValueError("y must be > 0")
         self.__y = value
-        
