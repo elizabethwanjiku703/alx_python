@@ -1,4 +1,4 @@
-#Python - Almost a circle
+*Python - Almost a circle*
 | Tasks	| Description |
 |-------|-------------|
 |0. Base class | Write the first class Base:Create a folder named models with an empty file __init__.py inside - with this file, the folder will become a Python package. Create a file named models/base.py |
