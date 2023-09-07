@@ -1,11 +1,11 @@
 #!/usr/bin/python3
+"""Base class for all classes"""
 class Base:
-    """Base class of all classes"""
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """Initialize a new instance of the class"""
-        if id is None:
+        """Initializes a new instance of the class with the given id"""
+        if id is not None:
             self.id = id
         else:
             Base.__nb_objects += 1
