@@ -78,3 +78,13 @@ class Rectangle(Base):
         for i in range(self.__height):
             print(" " * self.__x, end="")
             print("#" * self.__width)
+    def __str__(self):
+        """Returns a string representation of this object"""
+        id_str = str(self.id)
+        w_str = str(self.__width)
+        h_str = str(self.__height)
+        x_str = str(self.__x)
+        y_str = str(self.__y)
+        div_str = x_str + '/' + y_str + ' - ' + w_str + '/' + h_str
+        return ("[Rectangle] " + '(' + id_str + ') ' + div_str)
+
