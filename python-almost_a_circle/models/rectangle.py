@@ -86,4 +86,23 @@ class Rectangle(Base):
         y_str = str(self.__y)
         div_str = x_str + '/' + y_str + ' - ' + w_str + '/' + h_str
         return ("[Rectangle] " + '(' + id_str + ') ' + div_str)
-
+    def update(self, *args, **kwargs):
+        """args and kwargs"""
+        if args:
+            self.id = args[0] if len(args) >= 1 else self.id
+            self.width = args[1] if len(args) >= 2 else self.width
+            self.height = args[2] if len(args) >= 3 else self.height
+            self.x = args[3] if len(args) >= 4 else self.x
+            self.y = args[4] if len(args) >= 5 else self.y
+        else:
+            for key, value in kwargs.items():
+                if key == "id":
+                    self.id = value
+                elif key == "width":
+                    self.width = value
+                elif key == "height":
+                    self.height = value
+                elif key == "x":
+                    self.x = value
+                elif key == "y":
+                    self.y = value
