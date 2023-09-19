@@ -1,20 +1,19 @@
 #!/usr/bin/python3
-"""Import the packages"""
+
+"""import packages"""
 import requests
 import sys
 
-"""Send a POST request"""
-def send_post_request(url, email):
-    payload = {'email': email}
-    response = requests.post(url, data=payload)
-    return response.text
-
-if __name__ ==  '__main__':
-    """passed URL with the email as a parameter"""
+if __name__ == "__main__":
+    """ Get url and email command line argument"""
     url = sys.argv[1]
     email = sys.argv[2]
-    print(f"Your email is: {email}")
-    
-    """displays the body of the response"""
-    response_body = send_post_request(url, email)
-    print(response_body)
+
+    """Create a dictionary with the email as a parameter"""
+    data = {"email": email}
+
+    """Send the POST request to the specified URL with the email parameter"""
+    response = requests.post(url, data=data)
+
+    """Display the body of the response"""
+    print(response.text)
